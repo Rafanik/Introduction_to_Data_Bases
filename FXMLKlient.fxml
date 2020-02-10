@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="klientAnchorPane" prefHeight="476.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wbd_salonsamochodowy.FXMLKlientController">
+   <children>
+      <TableView fx:id="transakcjeTable" layoutX="16.0" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="424.0">
+        <columns>
+            <TableColumn fx:id="transakcjeDataColumn" prefWidth="86.39999103546143" text="Data" />
+          <TableColumn fx:id="transakcjeMarkaColumn" prefWidth="86.4000244140625" text="Marka" />
+            <TableColumn fx:id="transkacjeModelColumn" prefWidth="151.19996643066406" text="Model" />
+            <TableColumn fx:id="transakcjeCenaColumn" prefWidth="98.4000244140625" text="Cena" />
+        </columns>
+      </TableView>
+      <TextField fx:id="klientNazwiskoField" layoutX="520.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="143.0" />
+      <TextField fx:id="klientImieField" layoutX="520.0" layoutY="167.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="143.0" />
+      <Label fx:id="klientNazwiskoLabel" layoutX="454.0" layoutY="135.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Nazwisko:" />
+      <Label fx:id="klientImieLabel" layoutX="454.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="53.0" text="Imię:" />
+      <Button fx:id="klientModifyButton" layoutX="520.0" layoutY="337.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#klientModifyButtonOnAction" prefHeight="31.0" prefWidth="143.0" text="Modyfikuj" />
+      <TextField fx:id="klientPESELField" layoutX="520.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="143.0" />
+      <Label fx:id="pracownikPESELLabel" layoutX="453.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="53.0" text="PESEL:" />
+      <ChoiceBox fx:id="klientPlecField" layoutX="520.0" layoutY="240.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="143.0" />
+      <Label fx:id="pracownikPlecLabel" layoutX="453.0" layoutY="245.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="53.0" text="Płeć:" />
+      <Label fx:id="klientMiastoLabel" layoutX="677.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="90.0" text="Miasto:" />
+      <Label fx:id="klientUlicaLabel" layoutX="677.0" layoutY="171.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="90.0" text="Ulica:" />
+      <Label fx:id="klientNrDomuLabel" layoutX="677.0" layoutY="208.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="90.0" text="Nr domu:" />
+      <Label fx:id="klientNrMieszkaniaLabel" layoutX="677.0" layoutY="244.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="90.0" text="Nr Mieszkania:" />
+      <Label fx:id="klientKodPocztowyLabel" layoutX="677.0" layoutY="281.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="90.0" text="Kod Pocztowy:" />
+      <Label fx:id="klientAdresMailLabel" layoutX="454.0" layoutY="283.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="90.0" text="E-Mail:" />
+      <TextField fx:id="klientMiastoField" layoutX="760.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="143.0" />
+      <TextField fx:id="klientUlicaField" layoutX="760.0" layoutY="167.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="143.0" />
+      <TextField fx:id="klientNrDomuField" layoutX="760.0" layoutY="204.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="143.0" />
+      <TextField fx:id="klientNrMieszkaniaField" layoutX="760.0" layoutY="240.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="143.0" />
+      <TextField fx:id="klientKodPocztowyField" layoutX="760.0" layoutY="277.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="143.0" />
+      <TextField fx:id="klientAdresMailField" layoutX="520.0" layoutY="278.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="143.0" />
+      <Label layoutX="16.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="130.0" text="Witaj" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label layoutX="773.0" layoutY="30.0" prefHeight="18.0" prefWidth="130.0" textOverrun="WORD_ELLIPSIS" />
+      <Label fx:id="imiePowitanie" layoutX="69.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="130.0" text="Imie" textAlignment="RIGHT" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="imieLogin" layoutX="764.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="130.0" text="Nazwisko" textAlignment="RIGHT" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="klientWylogujButton" layoutX="797.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#klientWylogujButtonOnAction" prefHeight="31.0" prefWidth="100.0" text="Wyloguj" />
+      <Label layoutX="16.0" layoutY="103.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="407.0" text="Moje transakcje:" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="453.0" layoutY="103.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="407.0" text="Moje dane:" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Button fx:id="klientModifyButton1" layoutX="797.0" layoutY="432.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#klientSamochodyButtonOnAction" prefHeight="31.0" prefWidth="100.0" text="Powrót" />
+      <Label fx:id="nazwiskoLogin" layoutX="764.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="130.0" text="Nazwisko" textAlignment="RIGHT" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="656.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zalogowano jako" />
+      <Text layoutX="656.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Klient" />
+      <ImageView fitHeight="28.0" fitWidth="257.0" layoutX="13.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Tlo.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="257.0" layoutX="157.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Tlo.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="257.0" layoutX="304.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Tlo.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="257.0" layoutX="449.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Tlo.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="257.0" layoutX="596.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Tlo.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="257.0" layoutX="741.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Tlo.JPG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

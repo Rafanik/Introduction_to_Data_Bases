@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="244.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wbd_salonsamochodowy.FXMLZalogujController">
+   <children>
+      <Label layoutX="10.0" layoutY="14.0" prefHeight="59.0" prefWidth="350.0" text="Podaj imię i nazwisko:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginImieField" layoutX="186.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="143.0" />
+      <Button fx:id="zalogujButton" layoutX="242.0" layoutY="162.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#zalogujButtonOnAction" prefHeight="31.0" prefWidth="89.0" text="Zaloguj" />
+      <TextField fx:id="loginNazwiskoField" layoutX="186.0" layoutY="81.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="28.0" prefWidth="143.0" />
+      <Label layoutX="106.0" layoutY="86.0" prefHeight="18.0" prefWidth="82.0" text="Imię:" />
+      <Label layoutX="106.0" layoutY="125.0" prefHeight="18.0" prefWidth="82.0" text="Nazwisko:" />
+      <ImageView fitHeight="28.0" fitWidth="257.0" layoutX="10.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Tlo.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="257.0" layoutX="156.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Tlo.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="147.0" layoutX="303.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Tlo.JPG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
